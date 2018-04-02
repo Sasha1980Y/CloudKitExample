@@ -22,6 +22,7 @@
 		7F72A00020724E1A0017510A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F72A00320724E1A0017510A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F72A00520724E1A0017510A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F72A00B20724E2B0017510A /* CloudKitExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		7F729FF820724E1A0017510A /* CloudKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				7F72A00B20724E2B0017510A /* CloudKitExample.entitlements */,
 				7F729FF920724E1A0017510A /* AppDelegate.swift */,
 				7F729FFB20724E1A0017510A /* ViewController.swift */,
 				7F729FFD20724E1A0017510A /* Main.storyboard */,
@@ -97,6 +99,11 @@
 					7F729FF520724E1A0017510A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudKitExample/CloudKitExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HY885L7L9;
 				INFOPLIST_FILE = CloudKitExample/Info.plist;
@@ -289,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudKitExample/CloudKitExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HY885L7L9;
 				INFOPLIST_FILE = CloudKitExample/Info.plist;
